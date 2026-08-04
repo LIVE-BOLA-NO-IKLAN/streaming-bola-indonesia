@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Mbah Sports - Pindah Alamat Web</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome untuk Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+        
+        body {
+            -webkit-user-select: none;
+            user-select: none;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                        url('https://cdn.phototourl.com/free/2026-07-23-85849e56-7889-4da6-bbaf-c7243e31d346.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* ANIMASI CAHAYA & BERGERAK PADA TOMBOL LINK WEB (Warna Emas/Kuning) */
+        @keyframes pulseGlowWeb {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+            50% { transform: scale(1.03); box-shadow: 0 0 22px 6px rgba(245, 158, 11, 0.5); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+
+        .btn-pulse-web {
+            animation: pulseGlowWeb 1.8s infinite ease-in-out;
+        }
+
+        /* STYLE MODEL IKLAN SESUAI FILE IMAM */
+        .ads-container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 320px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            background: transparent;
+        }
+        .ads-slide {
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+        }
+        .ads-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .wa-link-text {
+            background: transparent;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 5px;
+            font-size: 13px;
+            font-weight: bold;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        .wa-link-text a {
+            color: #3399ff;
+            text-decoration: underline;
+            word-break: break-word;
+            display: inline-block;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4" oncontextmenu="return false;">
+
+    <div class="max-w-md w-full space-y-6">
+        
+        <!-- MODEL IKLAN (MENGGANTIKAN LOGO BULAT - SESUAI FILE IMAM) -->
+        <div class="ads-container">
+            <div class="ads-slide">
+                <a href="https://chat.whatsapp.com/GXsBU9LqkzQ74WEABcMzV7" target="_blank">
+                    <img src="https://cdn.phototourl.com/free/2026-06-15-0efa30fa-a42b-4b14-8018-5774c0b23c30.jpg" alt="Iklan WA Group">
+                </a>
+                <div class="wa-link-text">
+                    KLIK UNTUK GRUB WA 👇🏻⚽<br>
+                    <a href="https://chat.whatsapp.com/GXsBU9LqkzQ74WEABcMzV7" target="_blank">https://chat.whatsapp.com/GXsBU9LqkzQ74WEABcMzV7</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU UTAMA -->
+        <div class="bg-[#121826]/95 backdrop-blur-md border border-yellow-500/40 rounded-3xl p-6 shadow-2xl text-center space-y-6 relative overflow-hidden">
+            
+            <!-- DEKORASI GARIS ATAS -->
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500"></div>
+
+            <!-- LOGO BRAND -->
+            <div class="flex justify-center pt-2">
+                <img alt="Mbah Sports" class="h-8 object-contain" src="https://cdn.phototourl.com/free/2026-06-15-206769d9-7654-4889-80aa-6fd45355ec7f.png"/>
+            </div>
+
+            <!-- PEMBERITAHUAN PINDAH -->
+            <div class="bg-[#1a2234] border border-yellow-500/30 rounded-2xl p-4 space-y-2">
+                <div class="text-3xl animate-bounce">⚠️</div>
+                <h2 class="text-xs font-black text-yellow-400 uppercase tracking-wide">
+                    WEB LIVE STREAMING SUDAH DI-PINDAHKAN
+                </h2>
+                <p class="text-[11px] text-gray-300 font-medium leading-relaxed">
+                    Silahkan kunjungi link/tautan terbaru kami di bawah ini untuk menonton live streaming tanpa iklan:
+                </p>
+            </div>
+
+            <!-- TOMBOL KE WEB BARU -->
+            <a href="https://tanpa-iklan-streaming-live-bola.vercel.app" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-pulse-web block w-full bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 text-black font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-lg transition duration-200 transform active:scale-95 flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-globe text-sm"></i>
+                <span class="truncate">tanpa-iklan-streaming-live-bola.vercel.app</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+
+            <div class="h-[1px] bg-gradient-to-r from-transparent via-gray-700 to-transparent my-2"></div>
+
+            <!-- WHATSAPP SECTION -->
+            <div class="space-y-3">
+                <p class="text-[11px] text-gray-300 font-bold uppercase tracking-wider">
+                    ADA KEBINGUNGAN? HUBUNGI WHATSAPP KAMI:
+                </p>
+                <a href="https://wa.me/6283824692223" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs py-3.5 px-4 rounded-xl shadow-md transition duration-200 transform active:scale-95 flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WA KAMI +62 838-2469-2223</span>
+                </a>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="pt-2 text-gray-500 text-[10px] font-medium">
+                <p>© 2026 mbah.kakung.Adit • All Rights Reserved</p>
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
